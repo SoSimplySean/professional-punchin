@@ -29,6 +29,7 @@ let mtx = [];
 class App {
   constructor() {
     this.loadProjects();
+    console.log("Trollolol");
   }
 
   // PARSE CSV FILE AND PRODUCE MATRIX
