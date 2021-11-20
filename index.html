@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Punchin - Groupbuy Tracker</title>
+    <script
+      src="https://kit.fontawesome.com/8e475313dc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./Assets/logo.png" alt="" />
+      <i class="far fa-user-circle account"></i>
+    </header>
+
+    <!-- SEARCH BAR -->
+
+    <div class="search-container">
+      <input
+        type="text"
+        name="searchBar"
+        id="searchBar"
+        placeholder="Find your project"
+      />
+    </div>
+
+    <!-- HERO BANNER -->
+    <div class="hero-banner-container">
+      <div class="hero-banner">
+        <h1 class="hero-banner-h1">
+          Having difficulty keeping track of your
+          <span style="color: var(--main); line-height: 19.2px">Groupbuys</span
+          >?
+        </h1>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="project-container">
+      <!-- To be populated via JavaScript -->
+      <ul class="project-list"></ul>
+    </div>
+
+    <div class="project-page"></div>
+    <!-- INDIVIDUAL PROJECT PAGE -->
+
+    <!-- <div class="project-page-container">
+      <div class="project-page-content-container">
+        <img
+          class="project-page-image"
+          src="${project[3]}"
+          alt=""
+        />
+        <div class="project-page-text-container">
+          <h1>${project[1]}</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+            nulla aliquid earum ducimus sit maxime aperiam dignissimos
+            reprehenderit nam! Aliquid, veritatis quos! Eum, doloribus odit.
+          </p>
+          <p class="project-page-eta">Est. ETA: <br />12/12/2022</p>
+        </div>
+      </div>
+
+      <div class="project-page-timeline-container">
+        <ul class="project-page-timeline">
+          <li class="timeline-active">By 20/10/21<br />GB Completed</li>
+          <li>By 20/10/21<br />GB Completed</li>
+          <li>By 20/10/21<br />GB Completed</li>
+          <li>By 20/10/21<br />GB Completed</li>
+          <li>By 20/10/21<br />GB Completed</li>
+        </ul>
+      </div>
+
+      <div class="project-page-support-form-container">
+        <form action="" class="support-form">
+          <h2>Contact Owner</h2>
+          <label for="email"></label>
+          <input
+            type="email"
+            placeholder="Enter email..."
+            name="email"
+            required
+          />
+
+          <label for="project"></label>
+          <textarea
+            rows="5"
+            name="project"
+            placeholder="Enter project name..."
+            required
+          ></textarea>
+          <div class="support-form-button-container">
+            <button type="submit" class="support-form-button">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div> -->
+
+    <div class="pagination-container">
+      <ul class="pagination-ul">
+        <!-- <li class="pagination-prev"><i class="fas fa-chevron-left"></i></li>
+        <li class="pagination-number"><span>1</span></li>
+        <li class="pagination-dots"><span>...</span></li>
+        <li class="pagination-number"><span>3</span></li>
+        <li class="pagination-number active"><span>4</span></li>
+        <li class="pagination-number"><span>5</span></li>
+        <li class="pagination-dots"><span>...</span></li>
+        <li class="pagination-number"><span>7</span></li>
+        <li class="pagination-next"><i class="fas fa-chevron-right"></i></li> -->
+      </ul>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <!-- Footer-About -->
+        <div class="footer-section">
+          <h3>About</h3>
+          <p class="footer-about">
+            Punchin is an ETA tracker for projects with long fulfilment periods.
+          </p>
+        </div>
+        <div class="footer-break"><hr /></div>
+        <!-- Footer-Contact -->
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p class="footer-contact">
+            Please get in touch at sean@oneolympus.com if you have any
+            questions, concerns or feedback.
+          </p>
+        </div>
+        <div class="footer-break"><hr /></div>
+        <!-- Footer-Copyright -->
+        <div class="footer-section">
+          <p class="footer-copyright">© 2021 Punchin</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- REQUEST BAR -->
+    <div class="request-bar display-none">
+      <h1>
+        Can't find your project?
+        <u>Send a request</u> &#8594;
+      </h1>
+    </div>
+
+    <!-- REQUEST MODAL -->
+
+    <div class="modal-overlay hidden"></div>
+
+    <div class="request-modal-container hidden">
+      <form action="" class="request-modal">
+        <h1 class="request-modal-h1">Project Request</h1>
+        <label for="email"></label>
+        <input
+          type="email"
+          placeholder="Enter email..."
+          name="email"
+          required
+        />
+
+        <label for="project"></label>
+        <textarea
+          rows="5"
+          name="project"
+          placeholder="Enter project name..."
+          required
+        ></textarea>
+        <div class="request-modal-button-container">
+          <button type="submit" class="request-modal-button">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
